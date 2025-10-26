@@ -84,7 +84,7 @@ It is an ideal project for students and developers who want to learn about deskt
 ## Screenshots
 
 ### Expense Table View
-![image alt]([https://github.com/kaiffaraz/Attendance_System/blob/main/Screenshot%20(42).png?raw=true](https://github.com/kaiffaraz/Expense_Tracker_Java/blob/main/Dashboard_Expns_trckr.png?raw=true))
+![image alt](Chart_Expnse_trackr.png)
 
 
 ### Expense Chart Visualization

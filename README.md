@@ -1,116 +1,79 @@
 Expense Tracker (JavaFX + SQLite)
+1. Overview
 
-Overview
+The Expense Tracker is a Java-based desktop application that allows users to record, manage, and analyze their daily expenses.
+It provides a user-friendly interface built using JavaFX, where users can enter details such as category, amount, date, and description for each expense.
 
-The Expense Tracker is a Java-based desktop application that allows users to record, manage, and analyze their daily expenses. 
-The application provides a user-friendly interface built with JavaFX, where users can enter details such as category, amount, 
-date, and description for each expense. All expenses are stored in a local SQLite database and also saved to a 
-CSV file for backup and data portability.
+All expenses are stored in a local SQLite database and also saved in a CSV file for backup and data portability.
 
-The project demonstrates how to integrate JavaFX (for the front-end) with SQLite (for persistent data storage) and includes
-data visualization through charts. It is an ideal project for students and developers who want to learn about desktop 
-application development, database integration, and file handling in Java.
+This project demonstrates how to integrate JavaFX for front-end design with SQLite for persistent data storage. It also includes data visualization through charts, making it an ideal learning project for students and developers interested in desktop application development, database integration, and file handling in Java.
 
-Features
-
-Add Expense Entries
+2. Features
+a. Add Expense Entries
 
 Users can input details including category, amount, date, and description.
 
-Data is saved in both the database and a CSV file.
+Each entry is saved both in the database and in a CSV file for backup.
 
-View Expenses in a Table
+b. View Expenses in a Table
 
-A dynamic table displays all expenses with columns for category, amount, date, and description.
+A dynamic TableView displays all expense records.
 
-Database Integration
+Columns include Category, Amount, Date, and Description.
 
-Uses SQLite as a lightweight, file-based database to store expense data.
+c. Database Integration
 
-Automatically creates the table if it does not exist.
+Uses SQLite as a lightweight, file-based relational database.
 
-CSV Backup
+Automatically creates the required table if it does not exist.
 
-Every entry added to the database is also written to a CSV file.
+d. CSV Backup
 
-This allows users to open their data in spreadsheet software such as Excel.
+Every record added to the database is also appended to a CSV file.
 
-Chart Visualization
+Users can open the CSV in spreadsheet applications like Microsoft Excel or Google Sheets.
 
-Displays expense data in a graphical format (Pie Chart or Bar Chart) to help analyze spending habits.
+e. Chart Visualization
 
-Error Handling
+Displays expenses in a graphical format using Pie Chart or Bar Chart.
 
-Includes exception handling for invalid input and database connectivity issues.
+Helps users analyze their spending habits visually.
 
-Modular Code Design
+f. Error Handling
 
-Implements a structured approach separating UI, database logic, and controller functions.
+Handles invalid inputs and database connectivity errors gracefully.
 
-Technologies Used:
+g. Modular Code Design
 
+Follows an MVC (Model-View-Controller) structure, separating UI, logic, and data management.
+
+3. Technologies Used
 Component	Technology
 Programming Language	Java
 GUI Framework	JavaFX
 Database	SQLite
 Database Driver	SQLite JDBC
 File Handling	CSV file I/O
-IDE Used	Visual Studio Code or IntelliJ IDEA
+IDE	Visual Studio Code / IntelliJ IDEA
 JDK Version	Java 17 or higher
+4. Setup Instructions
+4.1 Prerequisites
 
-Setup Instructions
-
-Prerequisites
+Before running this project, ensure the following tools are installed and configured on your system:
 
 Java Development Kit (JDK 17 or above)
-Make sure Java is installed and configured in your system environment variables.
+Verify installation by running:
+
+java -version
+
 
 SQLite JDBC Library
-Download sqlite-jdbc.jar and place it in the lib folder of your project.
+
+Download sqlite-jdbc.jar and place it in the lib/ folder of your project.
 
 JavaFX SDK
+
 Download the latest JavaFX SDK from https://openjfx.io
- and extract it to a known directory.
+.
 
- How the Application Works"
- 
-
-When the user runs the application, a JavaFX window opens displaying input fields for expense details.
-
-The user enters the category, amount, date, and description, then clicks the Add Expense button.
-
-The entered data is:
-
-Saved to the SQLite database using JDBC.
-
-Appended to a CSV file as a backup.
-
-The TableView updates automatically to show the new entry.
-
-A Chart is updated dynamically to represent the distribution of expenses by category.
-
-The database ensures data persistence, so even after closing the app, the expense records remain available.
-
-Learning Outcomes
-
-Through this project, you will learn how to:
-
-Build desktop GUI applications using JavaFX.
-
-Connect and interact with a SQLite database using JDBC.
-
-Handle file I/O operations in Java.
-
-Organize projects following MVC (Model-View-Controller) architecture.
-
-Implement data visualization using JavaFX charts.
-
-Manage error handling and debugging techniques for database connectivity.
-
-Conclusion
-
-The Expense Tracker project provides a complete and practical example of building a desktop application with 
-real-world functionality using JavaFX and SQLite. It demonstrates how to integrate GUI, database management, 
-and data visualization in a cohesive application. This project is particularly helpful for beginners and 
-intermediate Java developers looking to strengthen their understanding of full-stack desktop application 
-development.
+Extract it to a known directory and note the path to the lib folder.

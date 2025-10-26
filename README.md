@@ -84,13 +84,12 @@ It is an ideal project for students and developers who want to learn about deskt
 ## Screenshots
 
 ### Expense Table View
-![Expense Table Screenshot](screenshots/table.png)
+![Alt Text]([relative/path/to/image.png](https://github.com/kaiffaraz/Expense_Tracker_Java/blob/main/Dashboard_Expns_trckr.png?raw=true))
+
 
 ### Expense Chart Visualization
-![Expense Chart Screenshot](screenshots/chart.png)
+![Alt Text]([relative/path/to/image.png](https://github.com/kaiffaraz/Expense_Tracker_Java/blob/main/Chart_Expnse_trackr.png?raw=true))
 
-*(To add your screenshots, create a folder named `screenshots` in your project directory and place the images inside it.  
-Use the above Markdown image syntax to display them in the README.)*
 
 ---
 
